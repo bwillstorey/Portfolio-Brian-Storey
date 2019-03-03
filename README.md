@@ -1,4 +1,4 @@
-# Bootstrap-Portfolio
+# Portfolio
 
 ## Contributors
 @bwillstorey
