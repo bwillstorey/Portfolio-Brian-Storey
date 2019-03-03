@@ -8,7 +8,7 @@
 - Live Demo: https://bwillstorey.github.io/
 
 ## About
-- A personal development portfolio highlighting a variety of tools and technologies including Javascript, AJAX, APIs, Bootstrap. Current projects include a hangman game, a hidden number guess game, and a timed trivia game. Additional content forthcoming!
+A personal development portfolio highlighting a variety of tools and technologies including Javascript, AJAX, APIs, Bootstrap. Current projects include a hangman game, a hidden number guess game, and a timed trivia game. Additional content forthcoming!
 
 ## Contributing Guidelines
 All contributions and suggestions are welcome! For direct contributions, please fork the repository and file a pull request.
