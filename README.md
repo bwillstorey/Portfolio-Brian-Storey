@@ -5,7 +5,7 @@
 
 ## Technology
 - HTML5, CSS3, Bootstrap, Javascript, jQuery, AJAX, APIs, Firebase, Node, mySQL, Express
-- Live Demo: https://bwillstorey.github.io/Portfolio/
+- Live Demo: https://brianstorey.me
 
 ## About
 A personal development portfolio highlighting a variety of tools and technologies including Javascript, Node, AJAX, APIs, Bootstrap. Current projects include an application for happenings around Nashville, an Amazon-like node app, a SIRI-like node app, a train scheduler, a hangman game, a gif creator, a hidden number guess game, and a timed trivia game. Additional content forthcoming!
@@ -18,7 +18,7 @@ All contributions and suggestions are welcome! For direct contributions, please 
 
 ## Contact
 #### Developer/Full-stack Web Software Developer
-- Homepage: https://bwillstorey.github.io/Portfolio/
+- Homepage: https://brianstorey.me
 - email: bwillstorey@gmail.com
 - LinkedIn: https://www.linkedin.com/in/brianstorey/
 - AngelList: https://angel.co/brian-storey
