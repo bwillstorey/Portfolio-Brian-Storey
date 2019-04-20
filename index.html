@@ -1,84 +1,481 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Brian Storey Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> 
-    <link rel="stylesheet" href="assets/css/style.css">
+	<meta charset="UTF-8" />
+	<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0" name="viewport">
+	<meta name="twitter:widgets:theme" content="light">
+	<meta property="og:title" content="Brian Storey Portfolio" />
+	<meta property="og:type" content="website" />
+	<meta property="og:image" content="Your-Image-Url" />
+	<meta property="og:description" content="A personal portfolio for Brian Storey." />
+	<title>Brian Storey Portfolio</title>
+	<link rel="shortcut icon" type="image/x-icon" href="images/Thvg-Wood-Folders-Glossy-Applications.ico">
+
+	<!-- Font -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700%7CMontserrat:400,700%7CPlayfair+Display:400,400italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- Css -->
+	<link rel="stylesheet" href="css/core.min.css" />
+	<link rel="stylesheet" href="css/skin.css" />
+
+	<!--[if lt IE 9]>
+    	<script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
 </head>
-<body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="index.html">Brian Storey</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="portfolio.html">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                  </ul>
-                </div>
-            </nav>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="h3">About Me</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <img src="assets/images/headshot.jpg" class="img-fluid" alt="Brian Storey headshot">
-                    <div class="row">
-                        <div class="col-md-6" class="text-center">
-                            <button type="button" class="btn-light btn-sm">GitHub</button>
-                        </div>
-                        <div class="col-md-6" class="text-center">
-                            <button type="button" class="btn-light btn-sm">LinkedIn</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9">               
-                        <div>
-                            <p class="text-secondary">I grew up outside of Atlanta spending much of my time playing baseball and tennis. I also was in several bands playing guitar. 
-                                I was always interested in both sports and music, hobbies which I continue to this day. 
-                            </p>
-                            <p class="text-secondary">
-                                I attended the University of Georgia, studying Finance, Music Business, and Leadship. I made to jump to Nashville to pursue a career in the music industry. 
-                                After several fast-paced years, I moved into the financial sector working with Deloitte in their forensic investigations division. 
-                                Presently, I work at UBS leading the MIS Analytics team in the Financial Crime Prevention sector. I enjoy deep data analytics and am fascinated with the insights data can bring to light.
-                                I am concurrently studying at Vanderbilt University as part of their flagship software development cohort. 
-                                The gradute level program is a joint venture between the Engineering school and Owen Graduate school of Management focusing on 
-                                HTML5, CSS3, Bootstrap, Javascript, jQuery, Express.js, React.js, Node.js, Database Theory, MongoDB, MySQL, Command Line, and Git.
-                                The experience has been challenging but very enjoyable.
-                            </p>
-                            <p class="text-secondary">
-                            I currently live in Nashville with my wife Daina and our dog Maximus. We love the music scene here, enjoy travelling internationally, and being outdoors. We recently were scuba certified and got to experience the amazing dive sites in Grand Cayman. In my spare time, I enjoy playing Xbox and watching UGA football.
-                            </p>
-                        </div>
-                    </div> 
-                </div>
-            </div>        
+<body class="shop home-page">
 
-    <div class="gap"></div>
+	<!-- Side Navigation Menu -->
+	<aside class="side-navigation-wrapper enter-right" data-no-scrollbar data-animation="reveal">
+		<div class="side-navigation-scroll-pane">
+			<div class="side-navigation-inner">
+				<div class="side-navigation-header">
+					<div class="navigation-hide side-nav-hide">
+						<a href="#">
+							<span class="icon-cancel medium"></span>
+						</a>
+					</div>
+				</div>
+				<nav class="side-navigation">
+					<h2 id="side-h2" class="color-white" data-offset="-60">Brian Storey</h2>
+					<ul>
+						<li>
+							<a href="#home" data-offset="-60" class="scroll-link">Home</a>
+						</li>
+						<li>
+							<a href="#services" data-offset="-60" class="scroll-link">Core Skills</a>
+						</li>
+						<li>
+							<a href="#work" data-offset="-60" class="scroll-link">Portfolio</a>
+						</li>
+						<li>
+							<a href="#about" data-offset="-60" class="scroll-link">About Me</a>
+						</li>
+						<li>
+							<a href="#contact" data-offset="-60" class="scroll-link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="side-navigation">
+					<div class="custom-content">
+						<hr class="border-white mt-0 opacity-02">
+						<h3 class="widget-title color-grey">Contact Me</h3>
+						<p>I'd love to connect. Please contact me below via email or LinkedIn.</p>
+						<!-- <p class="lead weight-bold color-grey"><a href="mailto:bwillstorey@gmail.com">bwillstorey@gmail.com</a></p>
+						<p class="lead weight-bold color-grey"><a href="https://github.com/bwillstorey">GitHub</a></p>
+						<p class="lead weight-bold color-grey"><a href="https://www.linkedin.com/in/brianstorey/">LinkedIn</a></p> -->
+						<p class="lead weight-bold color-grey">
+							<a class="icons" href="mailto:bwillstorey@gmail.com"><i class="far fa-envelope fa-2x"></i></a>
+							<a class="icons" href="https://github.com/bwillstorey"><i class="fab fa-github fa-2x"></i></a>
+							<a class="icons" href="https://www.linkedin.com/in/brianstorey/"><i class="fab fa-linkedin fa-2x"></i></a>
+						</p>
+					</div>
+				</div>
+				<div class="side-navigation-footer">
+					<p class="copyright no-margin-bottom">&copy; 2019</p>
+				</div>
+			</div>
+		</div>
+	</aside>
+	<!-- Side Navigation Menu End -->
 
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-        <span class="text-muted">Copyright © 2019</span>
-        </div>
-    </footer>
+	<div class="wrapper">
+		<div class="wrapper-inner">
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>  
+			<!-- Header -->
+			<header class="header header-fixed header-fixed-on-mobile header-transparent" data-bkg-threshold="100" data-compact-threshold="100">
+				<div class="header-inner">
+					<div class="row nav-bar">
+						<div class="column width-12 nav-bar-inner">
+							<div class="logo">
+								<div class="logo-inner">
+									<div></div>
+									<a href="index.html"><h2>Brian Storey</h2></a>
+								</div>
+							</div>
+							<nav class="navigation nav-block secondary-navigation nav-right">
+								<ul>
+									<li class="aux-navigation">
+										<!-- Aux Navigation -->
+										<a href="#" class="navigation-show side-nav-show nav-icon">
+											<span class="icon-menu"></span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="navigation nav-block primary-navigation nav-center">
+								<ul>
+									<li>
+										<a href="#home" data-offset="-60" class="scroll-link">Home</a>
+									</li>
+									<li>
+										<a href="#services" data-offset="-60" class="scroll-link">Core Skills</a>
+									</li>
+									<li>
+										<a href="#work" data-offset="-60" class="scroll-link">Portfolio</a>
+									</li>
+									<li>
+										<a href="#about" data-offset="-60" class="scroll-link">About Me</a>
+									</li>
+									<li>
+										<a href="#contact" data-offset="-60" class="scroll-link">Contact</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</header>
+			<!-- Header End -->
 
+			<!-- Content -->
+			<div class="content clearfix">
+
+				<!-- Fullscreen Slider Section -->
+				<section id="home" class="section-block featured-media tm-slider-parallax-container">
+					<div class="tm-slider-container full-width-slider" data-featured-slider data-parallax data-scale-under="960">
+						<ul class="tms-slides">
+							<li class="tms-slide" data-image data-force-fit data-overlay-bkg-color="#000000" data-overlay-bkg-opacity="0.5">
+								<div class="tms-content">
+									<div class="tms-content-inner center v-align-middle">
+										<div class="row">
+											<div class="column width-12">
+												<h1 class="tms-caption mb-30 color-white font-alt-2 title-xlarge weight-light"
+													data-animate-in="preset:slideInUpShort;duration:900ms;delay:100ms;"
+													data-no-scale
+													>Hello there. I'm Brian.</h1>
+												<div class="clear"></div>
+												<div class="tms-caption mb-10 color-white">
+													<a href="#services" data-offset="-60" class="tms-caption button medium pill scroll-link border-white bkg-hover-theme color-white color-hover-white"
+														data-animate-in="preset:scaleOut;duration:900ms;delay:400ms;"
+														data-no-scale
+													>See What I Do</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img data-src="images/landing.jpg" data-retina src="images/landing.jpg" alt="Skyline"/>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- Fullscreen Slider Section End -->
+
+				<!-- Services Section -->
+				<div id="services" class="section-block replicable-content bkg-grey-ultralight">
+					<div class="row">
+						<div class="column width-4">
+							<h2 class="mb-50">What I do</h2>
+						</div>
+						<div class="column width-8">
+							<p class="lead text-large color-black weight-bold mb-60 pu-10">Hello! I am an aspiring full-stack developer in Nashville, TN with Focuses on Analytics, Programming &amp; Automation.</p>
+						</div>
+					</div>
+					<div class="row flex">
+						<div class="column width-4">
+							<div class="feature-column small horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;" data-threshold="0.5">
+								<div class="feature-text">
+									<span class="text-medium font-alt-2">01.</span>
+									<h3 class="color-grey">Analytics</h3>
+									<p>Delivering business insights using data analytics and visualtions tools</p>
+								</div>
+							</div>
+						</div>
+						<div class="column width-4">
+							<div class="feature-column small horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:100ms;" data-threshold="0.5">
+								<div class="feature-text">
+									<span class="text-medium font-alt-2">02.</span>
+									<h3 class="color-grey">Programming</h3>
+									<p>HTML5, CSS3, Bootstrap, Javascript, jQuery, Express.js, Handlebars, React.js, Node.js, MongoDB, MySQL, Firebase</p>
+								</div>
+							</div>
+						</div>
+						<div class="column width-4">
+							<div class="feature-column small horizon" data-animate-in="preset:slideInLeftShort;duration:1000ms;delay:200ms;" data-threshold="0.5">
+								<div class="feature-text">
+									<span class="text-medium font-alt-2">03.</span>
+									<h3 class="color-grey">Automation</h3>
+									<p>Process Automation through the use of Robotics platforms such as Automation Anywhere</p>
+								</div>
+							</div>
+						</div> 
+					</div>
+				</div>
+				<!-- Services Section -->
+
+				<!-- Portfolio Grid -->
+				<section id="work">
+					<div class="section-block grid-filter-menu center pt-110 pb-70 bkg-white">
+						<div class="row">
+							<div class="column width-8 offset-2 center horizon font-alt-2" data-animate-in="preset:flipInY;duration:1000ms;" data-threshold="1">
+								<h2 class="mb-30">Recent Projects</h2>
+							</div>
+						</div>
+					</div>
+						<div class="row">
+							<div class="column width-8 offset-2 center">
+
+							</div>
+						</div>
+					</div>
+					<div class="section-block grid-container fade-in-progressively full-width no-margins no-padding-top" data-layout-mode="masonry" data-grid-ratio="1" data-set-dimensions data-animate-filter-duration="700" data-animate-resize data-animate-resize-duration="700">
+						<div class="row">
+							<div class="column width-12">
+								<div class="row grid content-grid-4">
+									<div class="grid-item grid-sizer wide photography">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://zmatthews33.github.io/WTF_App/">
+												<img src="images/WTF Screen.png" alt="WTF Page"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">What is Going on in Nashvillle</span>
+															<span class="project-description">A guide to Nashville's best food, drink, and music</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item photography">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://github.com/bwillstorey/Node-mySQL">
+												<img src="images/bamazon.png" alt="bAmazon"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">bAmazon</span>
+															<span class="project-description">An Amazon-like node application.</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item photography">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://github.com/bwillstorey/liri-node-app">
+												<img src="images/liri.png" alt="Liri"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">LIRI App</span>
+															<span class="project-description">A SIRI-like node application.</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item photography">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://bwillstorey.github.io/Train-Scheduler/">
+												<img src="images/Train Screen.png" alt="Train Scheduler Page"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">Train Scheduler</span>
+															<span class="project-description">Add trains to a schedule database</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item design">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://bwillstorey.github.io/Giftastic/">
+												<img src="images/Gif-Screen.png" alt="Gif Maker"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">Gif Maker</span>
+															<span class="project-description">Create your own superhero Gifs</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item design identity">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://bwillstorey.github.io/TriviaGame/">
+												<img src="images/Lebowski-Screen.png" alt="Lebowski Screen"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">Trivia Game</span>
+															<span class="project-description">The Dude most definitely abides</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item identity">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://bwillstorey.github.io/unit-4-game/">
+												<img src="images/Crystal-Screen.png" alt="Crystal Screen"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">Hidden Number Game</span>
+															<span class="project-description">Use hidden numbers to match a random number</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item design photography">
+										<div class="thumbnail overlay-img-scale-in" data-hover-easing="easeInOut" data-hover-speed="700" data-hover-bkg-color="#000000" data-hover-bkg-opacity="0.7">
+											<a class="overlay-link" href="https://bwillstorey.github.io/Word-Guess-Game/">
+												<img src="images/Point-Break-Screen.png" alt="Point Break Screen"/>
+												<span class="overlay-info">
+													<span>
+														<span>
+															<span class="project-title">Hangman Game</span>
+															<span class="project-description">Word guess, Point Break style</span>
+														</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="grid-item design photography hub-center">
+										<span class="hub-center">
+											<h3>GitHub Links</h3>
+											<ul>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/Whats_Going_On_App">What's Going On App</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/Node-mySQL">bAmazon</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/liri-node-app">LIRI</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/Train-Scheduler">Train Scheduler</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/Giftastic">Gif Maker</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/TriviaGame">Trivia Game</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/unit-4-game">Hidden Number Game</a></li>
+												<li class="hub-links"><a href="https://github.com/bwillstorey/Word-Guess-Game">Hangman Game</a></li>
+											</ul>
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- Portfolio Grid End -->
+				
+				<!-- About Section -->
+				<section id="about">
+
+					<!-- Hero 5 Section -->
+					<div class="section-block hero-5 right hero-5-about-5 clear-height show-media-column-on-mobile">
+						<div class="media-column width-6"></div>
+						<div class="row">
+							<div class="column width-5">
+								<div class="hero-content split-hero-content">
+									<div class="hero-content-inner left horizon" data-animate-in="preset:turnInLeft;duration:1000ms;" data-threshold="0.7">
+										<h2 class="mb-50">About Me</h2>
+										<p class="lead font-alt-2">I love to learn. </p>
+										<p>As long as I can remember, I always enjoyed discovering new things and figuring out how they worked. A new discovery would hook me and I'd dive in to learn everything I could about it. Whether it be a musical instrument, a theory, or a computer program, I enjoyed the process of breaking down each system to understand how they worked together to produce the result. Even more exciting was finding ways to make improvements to those systems.</p>
+										<p>I have found a calling in software development. Not only is there endless learning, but the process of deconstructing and building is a natual fit and something I deeply enjoy. I currently am enrolled in a full-stack software development program at Vanderbilt University to build my skillset and become a more proficient programmer.</p>
+										<p>I have also become heavily involved in data anlaytics in my career leveraging data to provide business insights to senior leaders. Analytics and development have become a powerful pairing that I am exitied to continue to build upon.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Hero 5 Section End -->
+
+				</section>
+				<!-- About Section End -->
+
+
+				<!-- Contact Section -->
+				<section id="contact">
+
+					<!-- Contact Form -->
+					<div class="section-block replicable-content contact-2">
+						<div class="row">
+							<div class="column width-12">
+								<h2 class="mb-30">Let's Connect</h2>
+								<div class="row">
+									<div class="column width-16 contact-info">
+										<p>
+											<a class="icons" href="mailto:bwillstorey@gmail.com"><i class="far fa-envelope fa-3x"></i></a>
+											<a class="icons" href="https://github.com/bwillstorey"><i class="fab fa-github fa-3x"></i></a>
+											<a class="icons" href="https://www.linkedin.com/in/brianstorey/"><i class="fab fa-linkedin fa-3x"></i></a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Contact Form End -->
+
+					<!-- Map Section -->
+					<!-- <div class="section-block no-padding">
+						<div class="row collapse full-width">
+							<div class="column width-12 center">
+								<div class="map-container" data-coordinates="[[40.723301,-74.002988],[40.733301,-74.043988],[40.723301,-73.907888]]" data-icon='"images/assets/map-marker.png","images/assets/map-marker.png","images/assets/map-marker.png"' data-info='"Office One<br>44 St. West 32","Office Two<br>44 St. West 32","Office Three<br>44 St. West 32"' data-zoom-level="13" data-style="color">
+									<div class="map-canvas" id="map-1"></div>
+								</div>
+							</div>
+						</div>
+					</div> -->
+					<!-- Map Section End -->
+
+				</section>
+
+				<!-- Search Modal End -->
+				<!-- <div id="search-modal" class="hide">
+					<div class="row">
+						<div class="column width-12 center">
+							<div class="search-form-container site-search">
+								<form action="#" method="get" novalidate>
+									<div class="row">
+										<div class="column width-12">
+											<div class="field-wrapper">
+												<input type="text" name="search" class="form-search form-element" placeholder="type &amp; hit enter...">
+												<span class="border"></span>
+											</div>
+										</div>
+									</div>
+								</form>
+								<div class="form-response"></div>
+							</div>
+							<a href="#" class="tml-aux-exit">Close</a>
+						</div>
+					</div>
+				</div> -->
+				<!-- Search Modal End -->
+
+			</div>
+			<!-- Content End -->
+
+			<!-- Footer -->
+			<footer class="footer">
+				<div class="footer-bottom">
+					<div class="row">
+						<div class="column width-12">
+							<div class="footer-bottom-inner center">
+								<p class="copyright pull-left clear-float-on-mobile">
+									&copy; 2019. All Rights Reserved.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- Footer End -->
+
+		</div>
+	</div>
+
+	<!-- Js -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBEnb3rw-O6b4N7_WgKbIJEJHk7mY2ngvg"></script>
+	<script src="js/timber.master.min.js"></script>
 </body>
 </html>
