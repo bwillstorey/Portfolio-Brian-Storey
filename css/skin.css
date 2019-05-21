@@ -2338,14 +2338,13 @@ h3.project-title{
 }
 .hub-center h3 {
 	text-align: center;
-	margin-top: 20px;
-	padding: 40px 0;
+	margin: 10px 0;
+	padding: 10px 0;
 		/* display: inline-block; */
 		background-color: #ccc;
 }
 .hub-center ul {
 	text-align: center;
-	padding: 20px 0;
 }
 .hub-links ul,
 .hub-links li{
