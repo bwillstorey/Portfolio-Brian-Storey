@@ -2369,13 +2369,13 @@ h3.project-title{
 }
 .hub-links a {
 	display: inline;
-	padding: 0.7rem 1.2rem;
-	font-size: 1.2rem;
+	padding: 0.7rem 1rem;
+	font-size: 1rem;
 	font-weight: 600;
-	line-height: 1.1rem;
+	line-height: .5rem;
 	color: #999;
 	border-radius: 20rem;
-	/* display: block; */
+	display: block;
 	position: relative;
 	border-bottom: 1px solid transparent;
 }
