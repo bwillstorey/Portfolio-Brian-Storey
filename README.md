@@ -4,11 +4,11 @@
 @bwillstorey
 
 ## Technology
-- HTML5, CSS3, Bootstrap, Javascript, jQuery, AJAX, APIs, Firebase, Node, mySQL, Express
+- Javascript, React, Node.js, Express, MongoDB, mySQL, HTML5, CSS3, Bootstrap, jQuery, AJAX, APIs, Firebase
 - Live Demo: https://brianstorey.me
 
 ## About
-A personal development portfolio highlighting a variety of tools and technologies including Javascript, Node, AJAX, APIs, Bootstrap. Current projects include an application for happenings around Nashville, an Amazon-like node app, a SIRI-like node app, a train scheduler, a hangman game, a gif creator, a hidden number guess game, and a timed trivia game. Additional content forthcoming!
+A personal development portfolio highlighting a variety of tools and technologies including Javascript, React, Express, Node, MongoDB, mySQL, AJAX, APIs, Bootstrap. Current projects include an application highlighting hot chicken restaurants, various happenings around Nashville, a Google Books search tool, a React memory game, an NPR web scraper, a node/express burger application utilizing handlebars, a scuba dive buddy finder, an Amazon-like node app, a SIRI-like node app, a train scheduler, a hangman game, a gif creator, a hidden number guess game, and a timed trivia game. Additional content forthcoming!
 
 ### Portfolio
 ![Home](./images/portfolio.png)  
@@ -21,4 +21,3 @@ All contributions and suggestions are welcome! For direct contributions, please 
 - Homepage: https://brianstorey.me
 - email: bwillstorey@gmail.com
 - LinkedIn: https://www.linkedin.com/in/brianstorey/
-- AngelList: https://angel.co/brian-storey
