@@ -2181,6 +2181,7 @@ body,
 }
 .hero-5-about-5 .media-column{
 	background-image: url(../images/headshot-new-small.jpeg);
+	background-size: contain;
 }
 
 /*------------------------------------------------------------------
